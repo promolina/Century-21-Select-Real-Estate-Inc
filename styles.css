@@ -17,6 +17,11 @@
   color: #ffffff !important;
 }
 
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -150,7 +155,26 @@
   border-radius: 50%;
   padding: 0.75rem;
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+
+  
 }
+
+.card {
+  padding: 1rem; /* Adds spacing inside the entire card */
+  max-width: 350px;
+  margin: 1rem auto;
+  height: 100%;
+}
+
+.card-body {
+  padding: 1.25rem; /* Slightly more spacious than default */
+}
+
+.card-footer {
+  padding: 0.75rem 1.25rem;
+}
+
+
 
 
 /*  */
