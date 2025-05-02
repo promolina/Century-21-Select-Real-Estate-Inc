@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+  <title>Demo</title>
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg" style="background-color: #3F3F3F;">
+      <div class="container d-flex align-items-center">
+        
+        <!-- Brand: Bigger logo, inline -->
+        <a class="navbar-brand d-flex align-items-center me-4" href="#">
+          
+          <span class="fs-3 fw-bold" style="color: #D6C29C;">CENTURY 21</span>
+        </a>
+    
+        <!-- Toggler (mobile menu) -->
+        <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <!-- Nav items beside branding -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex align-items-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Properties</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">For Sale</a></li>
+                <li><a class="dropdown-item" href="#">For Rent</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Buying & Selling</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">Buy a Home</a></li>
+                <li><a class="dropdown-item" href="#">Sell a Home</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">About Me</a>
+              <ul class="dropdown-menu dropdown-menu-dark">
+                <li><a class="dropdown-item" href="#">My Story</a></li>
+                <li><a class="dropdown-item" href="#">Testimonials</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+    
+      </div>
+    </nav>
+    
+  </header>
+  
+  <!-- HERO SECTION -->
+<section class="hero d-flex flex-column justify-content-center align-items-center text-center">
+  <!-- Branding -->
+  <div class="hero-content text-dark">
+    <h1 class="display-4 fw-bold font-serif">Varghese Mathews</h1>
+    <p class="fst-italic fs-4 font-serif">real estate</p>
+  </div>
+
+  <!-- Search Bar -->
+  <div class="search-bar-container bg-white shadow rounded mt-4 p-3 d-flex flex-wrap justify-content-center">
+    <input type="text" class="form-control m-2" placeholder="Neighborhood, City, ZIP or MLS#" style="flex: 2;">
+    <select class="form-select m-2" style="flex: 1;">
+      <option>Min Price</option>
+    </select>
+    <select class="form-select m-2" style="flex: 1;">
+      <option>Max Price</option>
+    </select>
+    <select class="form-select m-2" style="flex: 1;">
+      <option>Bed</option>
+    </select>
+    <select class="form-select m-2" style="flex: 1;">
+      <option>Bath</option>
+    </select>
+    <button class="btn btn-outline-dark m-2">Search</button>
+  </div>
+</section>
+
+
+
+<section class="about-section">
+  <div class="about-text">
+    <h2>Meet Varghese</h2>
+    <p>
+      Varghese is a dedicated professional with a strong network and a sharp understanding of the real estate landscape. With a solid background in accounting and finance, he offers valuable insight to help clients navigate complex decisions with clarity and confidence. Whether buying or selling, Varghese ensures every move is made with strategic precision, protecting his clients’ interests at every step
+    </p>
+    <p>
+      I value relationships over transactions. As your local real estate agent, I believe in building lasting relationships based on trust, honesty, and mutual respect. My top priority is to provide an incomparable level of service to each client.
+    </p>
+    <button>Learn More</button>
+  </div>
+  <div class="about-image">
+    <img src="./assets/images/portrait.jpg" alt="Varghese Portrait" />
+  </div>
+</section>
+
+<!-- HTML -->
+<!-- HTML -->
+<section class="portfolio-section">
+  <div class="container">
+    <h2 class="text-center mb-5">Varghese's Portfolio</h2>
+    <div id="propertyCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex justify-content-center gap-4">
+            <div class="card property-card">
+              <span class="badge bg-dark position-absolute top-0 start-0 m-2">Worked with Seller</span>
+              <img src="./Assets/Images/house-1.jpg" class="card-img-top" alt="Property 1">
+              <div class="card-body">
+                <h5 class="card-title">2980 Tuers Road</h5>
+                <p class="card-text mb-1">San Jose, CA 95121</p>
+                <h6 class="fw-bold">$1,388,000</h6>
+                <div class="d-flex justify-content-between text-muted">
+                  <span>4 Bed</span>
+                  <span>3 Baths</span>
+                  <span>2000 sqft</span>
+                </div>
+                <button class="btn btn-danger mt-2">Sold</button>
+              </div>
+            </div>
+            <div class="card property-card">
+              <span class="badge bg-dark position-absolute top-0 start-0 m-2">Worked with Buyer</span>
+              <img src="./Assets/Images/house-2.jpg" class="card-img-top" alt="Property 2">
+              <div class="card-body">
+                <h5 class="card-title">3966 Agatha Way</h5>
+                <p class="card-text mb-1">San Jose, CA 95136</p>
+                <h6 class="fw-bold">$1,225,000</h6>
+                <div class="d-flex justify-content-between text-muted">
+                  <span>4 Bed</span>
+                  <span>2 Baths</span>
+                  <span>1732 sqft</span>
+                </div>
+                <button class="btn btn-danger mt-2">Sold</button>
+              </div>
+            </div>
+            <div class="card property-card">
+              <span class="badge bg-dark position-absolute top-0 start-0 m-2">Worked with Seller</span>
+              <img src="./Assets/Images/house-3.jpg" class="card-img-top" alt="Property 3">
+              <div class="card-body">
+                <h5 class="card-title">2319 Saidel Drive 3</h5>
+                <p class="card-text mb-1">San Jose, CA 95124</p>
+                <h6 class="fw-bold">$680,000</h6>
+                <div class="d-flex justify-content-between text-muted">
+                  <span>2 Bed</span>
+                  <span>1 Bath</span>
+                  <span>903 sqft</span>
+                </div>
+                <button class="btn btn-danger mt-2">Sold</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Additional carousel-item blocks can be added here -->
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#propertyCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">
+          <img src="./Assets/Images/" alt="">
+        </span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#propertyCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="contact-section py-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center text-center text-md-start">
+
+      <!-- Profile Info -->
+      <div class="col-lg-6 mb-5 mb-lg-0">
+        <div class="d-flex flex-column align-items-center">
+          <img src="assets/images/portrait.jpg" alt="Jessica Ceja" class="img-fluid rounded shadow mb-3" style="max-width: 200px;">
+          <h2 class="text-center display-5 fw-bold font-serif my-4">Varghese Mathews</h2>
+
+          <div class="d-flex justify-content-center flex-wrap gap-5 my-4">
+            <div class="text-center">
+              <h6 class="fw-bold">Email</h6>
+              <p class="mb-0">Varghese.Mathews@c21selectgroup.com</p>
+            </div>
+            <div class="text-center">
+              <h6 class="fw-bold">Phone</h6>
+              <p class="mb-0">(209) 8750-7099</p>
+            </div>
+          </div>
+          
+
+
+          <a href="mailto:jessica@jessicaceja.com" class="btn btn-outline-dark mt-3 px-4">Contact Me</a>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="col-lg-6 text-center">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.2217829302954!2d-121.92660272407248!3d37.30015117210513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e32e8f073048b%3A0xcaa28977ef0752f6!2s1712%20Meridian%20Ave%20F%2C%20San%20Jose%2C%20CA%2095125!5e0!3m2!1sen!2sus!4v1714563662362!5m2!1sen!2sus"
+          width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer-section py-5">
+  <div class="container text-center">
+
+    <!-- Top Row -->
+    <div class="row text-uppercase small mb-4">
+      <div class="col-md-4 mb-2 mb-md-0">Coldwell Banker - San Jose</div>
+      <div class="col-md-4 mb-2 mb-md-0">&copy; 2023 Coldwell Banker Real Estate LLC</div>
+      <div class="col-md-4">
+        <a href="#" class="text-decoration-none me-2">Terms of Use</a> |
+        <a href="#" class="text-decoration-none mx-2">Privacy Policy</a> |
+        <a href="#" class="text-decoration-none">Fair Housing Notice</a>
+      </div>
+    </div>
+
+    <!-- Logo -->
+
+    <!-- Agent Info -->
+    <p class="mb-1">Varghese Mathews, DRE # 02241739</p>
+
+    <!-- Social Icons -->
+    <div class="mb-3">
+      <a href="#" class="me-3"><i class="bi bi-instagram fs-4"></i></a>
+      <a href="#" class="me-3"><i class="bi bi-facebook fs-4"></i></a>
+      <a href="#"><i class="bi bi-youtube fs-4"></i></a>
+    </div>
+
+    <!-- Disclaimer -->
+    <p class="text-muted small mb-0 px-md-5">
+      &copy; Century 21 Select Real Estate. All Rights Reserved.
+    </p>
+  </div>
+</footer>
+
+
+
+<script>
+  const carousel = document.querySelector('#propertyCarousel');
+  const bsCarousel = new bootstrap.Carousel(carousel, {
+    interval: false,
+    wrap: true
+  });
+</script>
+
+
+  
+</body>
+</html>
